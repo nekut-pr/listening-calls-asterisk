@@ -17,7 +17,7 @@ html() if not caller;
 sub html {
 
     print $cgi->header(-charset=>'UTF-8');
-    print $cgi->start_html(-title=>'SEZ Asterisk', -style=>{'src'=>'./../style.css'});
+    print $cgi->start_html(-title=>'Asterisk', -style=>{'src'=>'./../style.css'});
     
     my $global_directory    = '/var/www/asterisk/records/';
     my $directory           = strftime "%Y/%m/%d", localtime;
